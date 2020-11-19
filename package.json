@@ -4,11 +4,11 @@
   "description": "简易框架",
   "dependencies": {
     "egg": "^2",
-    "egg-http-error": "git+ssh://git@github.com/kiba-zhao/egg-http-error.git",
-    "egg-http-logger": "git+ssh://git@github.com/kiba-zhao/egg-http-logger.git",
-    "egg-params-inject": "git+ssh://git@github.com/kiba-zhao/egg-params-inject.git",
-    "egg-router-simple": "git+ssh://git@github.com/kiba-zhao/egg-router-simple.git",
-    "egg-swagger": "git+ssh://git@github.com/kiba-zhao/egg-swagger.git",
+    "egg-http-error": "git://github.com/kiba-zhao/egg-http-error.git",
+    "egg-http-logger": "git://github.com/kiba-zhao/egg-http-logger.git",
+    "egg-params-inject": "git://github.com/kiba-zhao/egg-params-inject.git",
+    "egg-router-simple": "git://github.com/kiba-zhao/egg-router-simple.git",
+    "egg-swagger": "git://github.com/kiba-zhao/egg-swagger.git",
     "sinon": "^9.2.1"
   },
   "devDependencies": {

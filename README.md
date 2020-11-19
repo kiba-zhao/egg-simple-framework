@@ -5,7 +5,7 @@
 ## Install
 
 ```bash
-$ npm install git+ssh://git@github.com:kiba-zhao/egg-simple-framework.git --save
+$ npm install git://github.com:kiba-zhao/egg-simple-framework.git --save
 ```
 
 ## Configuration
