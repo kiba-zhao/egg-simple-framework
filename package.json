@@ -4,6 +4,7 @@
   "description": "简易框架",
   "dependencies": {
     "egg": "^2",
+    "egg-healthy": "^1.0.0",
     "egg-http-error": "git://github.com/kiba-zhao/egg-http-error.git",
     "egg-http-logger": "git://github.com/kiba-zhao/egg-http-logger.git",
     "egg-http-relay": "git://github.com/kiba-zhao/egg-http-relay.git",

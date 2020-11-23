@@ -9,7 +9,7 @@
 exports.swagger = {
   enable: true,
   package: 'egg-swagger',
-  env: ['local'],
+  env: [ 'local' ],
 };
 
 exports.httpError = {
@@ -20,7 +20,7 @@ exports.httpError = {
 exports.httpLogger = {
   enable: true,
   package: 'egg-http-logger',
-  env: ['local', 'prod'],
+  env: [ 'local', 'prod' ],
 };
 
 exports.paramsInject = {
@@ -30,10 +30,15 @@ exports.paramsInject = {
 
 exports.httpRelay = {
   enable: true,
-  package: 'egg-http-relay'
+  package: 'egg-http-relay',
 };
 
 exports.routerSimple = {
   enable: true,
   package: 'egg-router-simple',
+};
+
+exports.healthy = {
+  enable: true,
+  package: 'egg-healthy',
 };
