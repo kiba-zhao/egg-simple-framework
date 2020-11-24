@@ -11,6 +11,17 @@ module.exports = app => {
 
   const exports = {};
 
+  exports.security = {
+    xframe: {
+      enable: false,
+    },
+    // See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+    csrf: {
+      enable: false,
+    },
+  };
+
+
   exports.static = {
     prefix: '/docs/',
     dir: path.join(app.baseDir, 'app/docs'),
