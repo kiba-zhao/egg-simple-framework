@@ -7,7 +7,7 @@
 'use strict';
 const path = require('path');
 
-module.exports = app => {
+module.exports = appInfo => {
 
   const exports = {};
 
@@ -21,16 +21,34 @@ module.exports = app => {
     },
   };
 
-
   exports.static = {
     prefix: '/docs/',
-    dir: path.join(app.baseDir, 'app/docs'),
+    dir: path.join(appInfo.baseDir, 'app/docs'),
     dynamic: true,
     preload: false,
     buffer: false,
-    maxFiles: 1000
+    maxFiles: 1000,
   };
 
+  exports.rabbitmq = {
+    client: {
+      url: 'amqp://guest:guest@localhost:5672',
+    },
+  };
+
+  exports.sequelize = {
+    dialect: 'mysql',
+    connectionUri: `mysql://root:example@localhost:3306/${appInfo.name}`,
+  };
+
+  exports.redis = {
+    client: {
+      host: 'localhost',
+      port: 6379,
+      password: 'auth',
+      db: 0,
+    },
+  };
   return exports;
 
 };

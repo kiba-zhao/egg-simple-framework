@@ -28,11 +28,6 @@ exports.paramsInject = {
   package: 'egg-params-inject',
 };
 
-exports.httpRelay = {
-  enable: true,
-  package: 'egg-http-relay',
-};
-
 exports.routerSimple = {
   enable: true,
   package: 'egg-router-simple',
@@ -42,3 +37,19 @@ exports.healthy = {
   enable: true,
   package: 'egg-healthy',
 };
+
+exports.rabbitmq = {
+  enable: true,
+  package: 'egg-rabbitmq',
+};
+
+exports.redis = {
+  enable: true,
+  package: 'egg-redis',
+};
+
+exports.sequelize = {
+  enable: true,
+  package: 'egg-sequelize',
+};
+
