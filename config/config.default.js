@@ -30,6 +30,15 @@ module.exports = appInfo => {
     maxFiles: 1000,
   };
 
+  exports.customLoader = {
+    httpApi: {
+      directory: 'app/http',
+      inject: 'app',
+      loadunit: true,
+      caseStyle: 'upper',
+    },
+  };
+
   exports.rabbitmq = {
     client: {
       url: 'amqp://guest:guest@localhost:5672',

@@ -7,6 +7,7 @@
     "egg-healthy": "^1.0.0",
     "egg-http-error": "git://github.com/kiba-zhao/egg-http-error.git",
     "egg-http-logger": "git://github.com/kiba-zhao/egg-http-logger.git",
+    "egg-http-simple": "git://github.com/kiba-zhao/egg-http-simple.git",
     "egg-params-inject": "git://github.com/kiba-zhao/egg-params-inject.git",
     "egg-rabbitmq": "git://github.com/kiba-zhao/egg-rabbitmq.git",
     "egg-redis": "^2.4.0",

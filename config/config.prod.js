@@ -44,16 +44,16 @@ module.exports = () => {
   };
 
   // mysql
-  const MYSQL_READ_DSN = getEnv(process.env.MYSQL_READ_DSN);
-  const MYSQL_WRITE_DSN = getEnv(process.env.MYSQL_WRITE_DSN);
-  const MYSQL_DSN = getEnv(process.env.MYSQL_DSN);
-  if (MYSQL_READ_DSN || MYSQL_WRITE_DSN) {
-    const pool_max = parseInt(getEnv(process.env.MYSQL_POOL_MAX, 5));
+  const DB_READ_DSN = getEnv(process.env.DB_READ_DSN);
+  const DB_WRITE_DSN = getEnv(process.env.DB_WRITE_DSN);
+  const DB_DSN = getEnv(process.env.DB_DSN);
+  if (DB_READ_DSN || DB_WRITE_DSN) {
+    const pool_max = parseInt(getEnv(process.env.DB_POOL_MAX, 5));
     exports.sequelize = {
       connectionUri: undefined,
       replication: {
-        read: MYSQL_READ_DSN ? MYSQL_READ_DSN.split(SEMICOLON).map(dsnGen) : dsnGen(MYSQL_DSN),
-        write: dsnGen(MYSQL_WRITE_DSN || MYSQL_DSN),
+        read: DB_READ_DSN ? DB_READ_DSN.split(SEMICOLON).map(dsnGen) : dsnGen(DB_DSN),
+        write: dsnGen(DB_WRITE_DSN || DB_DSN),
       },
       pool: {
         max: isNaN(pool_max) ? 5 : pool_max,
@@ -62,7 +62,7 @@ module.exports = () => {
 
   } else {
     exports.sequelize = {
-      connectionUri: process.env.MYSQL_DSN,
+      connectionUri: process.env.DB_DSN,
     };
   }
 
