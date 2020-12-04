@@ -21,15 +21,6 @@ module.exports = appInfo => {
     },
   };
 
-  exports.static = {
-    prefix: '/docs/',
-    dir: path.join(appInfo.baseDir, 'app/docs'),
-    dynamic: true,
-    preload: false,
-    buffer: false,
-    maxFiles: 1000,
-  };
-
   exports.customLoader = {
     httpApi: {
       directory: 'app/http',
