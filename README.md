@@ -92,6 +92,8 @@ exports.redis = {
 * `REDIS_CLUSTER`: redis-cluster的node连接dsn.
 * `REDIS_SCALEREADS`: redis的读写模式（master/all/slave）,默认为slave模式.仅仅在`REDIS_CLUSTER`设置后有效．
 
+> REDIS_SCALEREADS具体参数说明，请参考[ioredis](https://github.com/luin/ioredis)相关文档
+
 ## 插件禁用说明 ##
 实际应用很可能出现不需要使用某些插件的情况．
   * 禁用redis：应用没有需要使用redis的业务功能
