@@ -1,6 +1,6 @@
 # simple-framework
 
-简易框架
+简易http应用框架
 
 ## Install
 
@@ -81,7 +81,7 @@ exports.redis = {
   
 ### Sequelize ###
 
-* `DB_READ_DSN`: 读取数据的dsn连接．支持设置多个服务dsn地址，以`;`分割;
+* `DB_READ_DSN`: 读取数据的dsn连接．支持设置多个服务dsn地址，以`;`分割
 * `DB_WRITE_DSN`：　写入数据的dsn连接
 * `DB_DSN`: 默认数据读写的dsn连接
 * `DB_POOL_MAX`: 线程池最大连接数．仅在设置了`DB_READ_DSN`或`DB_WRITE_DSN`时有效．
@@ -89,7 +89,7 @@ exports.redis = {
 ### Redis ###
 
 * `REDIS_DSN`: redis默认连接dsn
-* `REDIS_CLUSTER`: redis-cluster的node连接dsn.
+* `REDIS_CLUSTER`: redis-cluster的node连接dsn.．支持设置多个dsn地址，以`;`分割
 * `REDIS_SCALEREADS`: redis的读写模式（master/all/slave）,默认为slave模式.仅仅在`REDIS_CLUSTER`设置后有效．
 
 > REDIS_SCALEREADS具体参数说明，请参考[ioredis](https://github.com/luin/ioredis)相关文档
